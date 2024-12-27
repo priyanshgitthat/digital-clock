@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 2000px;
+    background:linear-gradient(
+    45deg, #05cddb, 
+    #0820aa,
+    #181061,
+    #3c199b);
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main{
+    /* width: max-content; */
+    padding: 20px;
+    background-color: #dddddd34;
+    background-color: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.box{
+    /* border: 2px solid white; */
+    min-width: 200px;
+    width: max-content;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+span{
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    color: #dddd;
+    text-shadow: 0 0 15px #222;
+}
+
+.box1::after{
+    content: "hour";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ddd;
+}
+
+.box2::after{
+    content: "min";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ddd;
+}
+
+.box3::after{
+    content: "sec";
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ddd;
+}
+
+
+@media screen and (max-width:768px) {
+    .box{
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    span{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    .box{
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+    span{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .box{
+        min-width: 70px;
+        min-height: 70px;
+    }
+
+    span{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .box{
+        min-width: 70px;
+        min-height: 70px;
+    }
+
+    span{
+        font-size: 30px;
+    }
+}
